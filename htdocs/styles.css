@@ -1,0 +1,118 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Filter Form */
+.filter-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #e0e0e0;
+    border-radius: 8px;
+}
+
+.filter-form div {
+    margin: 5px;
+}
+
+.filter-form input {
+    padding: 8px;
+    width: 150px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Buttons */
+.btn {
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn.export {
+    background: #28a745;
+}
+
+.btn.reset {
+    background: #dc3545;
+}
+
+.btn {
+    background: #007bff;
+}
+
+/* Table Styling */
+.report-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.report-table th, .report-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.report-table th {
+    background: #007bff;
+    color: white;
+}
+
+.report-table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.report-table tr:hover {
+    background: #ddd;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .filter-form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-form div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .filter-form input {
+        width: 90%;
+    }
+
+    .report-table th, .report-table td {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
